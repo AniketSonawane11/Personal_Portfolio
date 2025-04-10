@@ -98,7 +98,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/images/abc.png) no-repeat;
+    background: url(../images/bg_copy.png) no-repeat;
     background-size: cover;
     background-position: center;
  
