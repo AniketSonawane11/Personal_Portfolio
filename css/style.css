@@ -15,7 +15,6 @@
 :root{
         --bg-color: #081b29;
         --second-bg-color: #112e42;
-        --second-bg-color: #112e42;
         --text-color: #ededed;
         --main-color: #00abf0;
 
@@ -98,7 +97,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(../images/bg_copy.png) no-repeat;
+    background: url(../images/home.png) no-repeat;
     background-size: cover;
     background-position: center;
  
@@ -270,9 +269,9 @@ section{
 }
 
 
-/* .home-sci a:hover{
+.home-sci a:hover{
     color: var(--bg-color);
-} */
+}
 
 .home-sci a::before{
     content: '';
@@ -472,6 +471,24 @@ span{
     font-size: 1.6rem;
     padding-top: .5rem;
 }
+/* Add this inside your style.css file */
+
+.project-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+/* Add a hover effect (optional) */
+.project-image:hover {
+  transform: scale(1.02);
+}
 
 .skills{
     min-height: auto;
@@ -642,7 +659,7 @@ span{
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder{
-    columns: var(--text-color);
+    color: var(--text-color);
 }
 
 .contact form .focus{
@@ -890,6 +907,12 @@ span{
         background: var(--bg-color);
         opacity: .6;
     }
+    
+}
+@media (max-width: 1180px){
+    .home{
+        background-image: none;
+    }
 }
 
 @media (max-width: 520px){
@@ -978,4 +1001,7 @@ span{
     100%{
         width: 0;
     }
+}
+.project-image {
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
